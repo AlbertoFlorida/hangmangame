@@ -1,5 +1,5 @@
 <?php
-// Comprobar si se ha pasado la palabra por la URL
+
 if (isset($_GET['palabra'])) {
     $palabra = htmlspecialchars($_GET['palabra']);
 } else {
@@ -12,10 +12,13 @@ if (isset($_GET['palabra'])) {
 <head>
     <meta charset="UTF-8">
     <title>Derrota</title>
+    <link rel="stylesheet" href="page-styles.css">
 </head>
 <body>
-    <h1>Lo siento</h1>
-    <p>Has perdido : La palabra era: <?php echo $palabra; ?></p>
-    <a href="index.php?reiniciar=true"><button>Jugar de nuevo</button></a>
+    <div class="container">
+        <h1>Lo siento. Has perdido</h1>
+        <p>La palabra es: <?php echo $palabra; ?></p>
+        <a href="index.php?reiniciar=true"><button>Jugar de nuevo</button></a>
+    </div>
 </body>
 </html>
