@@ -20,7 +20,6 @@ p {
     margin: 10px 0;
 }
 
-/* Contenedor principal */
 form {
     margin: 20px 0;
 }
@@ -48,7 +47,7 @@ button:hover {
     background-color: #45a049;
 }
 
-/* Estilo para las letras usadas y vidas */
+
 p:nth-of-type(2), p:nth-of-type(3) {
     font-weight: bold;
     margin-bottom: 20px;
@@ -62,15 +61,4 @@ a {
 
 a:hover {
     text-decoration: underline;
-}
-
-/* Mensajes de éxito o fracaso */
-.success {
-    color: green;
-    font-weight: bold;
-}
-
-.failure {
-    color: red;
-    font-weight: bold;
 }
